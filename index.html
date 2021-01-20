@@ -1,0 +1,126 @@
+<!––
+
+to do:
+highlight active Time
+tune up startTimes
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Family Guy Theme</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<html> 
+<body> 
+
+<center>
+
+<video id="vid" width="320" height="176" controls>
+  <source src="mov/fg.mp4" type="video/mp4">
+</video>
+ 
+<p>
+  <button onclick="submitLyric(0)">It</button>
+  <button onclick="submitLyric(1)">seems</button>
+  <button onclick="submitLyric(2)">today</button>
+  <button onclick="submitLyric(3)">that</button>
+  <button onclick="submitLyric(4)">all</button>
+  <button onclick="submitLyric(5)">we</button>
+  <button onclick="submitLyric(6)">see</button>
+  <button onclick="submitLyric(7)">is</button>
+  <button onclick="submitLyric(8)">violence</button>
+  <button onclick="submitLyric(9)">in</button>
+  <button onclick="submitLyric(10)">violence</button>
+  <button onclick="submitLyric(11)">and</button>
+  <button onclick="submitLyric(12)">sex</button>
+  <button onclick="submitLyric(13)">on</button>
+  <button onclick="submitLyric(14)">tv</button>
+  <button onclick="submitLyric(15)">but</button>
+  <button onclick="submitLyric(16)">where</button>
+  <button onclick="submitLyric(17)">are</button>
+  <button onclick="submitLyric(18)">those</button>
+  <button onclick="submitLyric(19)">good</button>
+  <button onclick="submitLyric(20)">old</button>
+  <button onclick="submitLyric(21)">fashioned</button>
+  <button onclick="submitLyric(22)">values</button>
+  <button onclick="submitLyric(23)">on</button>
+  <button onclick="submitLyric(24)">which</button>
+  <button onclick="submitLyric(25)">we</button>
+  <button onclick="submitLyric(26)">used</button>
+  <button onclick="submitLyric(27)">to</button>
+  <button onclick="submitLyric(28)">rely</button>
+  <button onclick="submitLyric(29)">lucky</button>
+  <button onclick="submitLyric(30)">there's</button>
+  <button onclick="submitLyric(31)">a</button>
+  <button onclick="submitLyric(32)">family</button>
+  <button onclick="submitLyric(33)">guy</button>
+  <button onclick="submitLyric(34)">lucky</button>
+  <button onclick="submitLyric(35)">there's</button>
+  <button onclick="submitLyric(36)">a</button>
+  <button onclick="submitLyric(37)">man</button>
+  <button onclick="submitLyric(38)">who</button>
+  <button onclick="submitLyric(39)">positively</button>
+  <button onclick="submitLyric(40)">can</button>
+  <button onclick="submitLyric(41)">do</button>
+  <button onclick="submitLyric(42)">all</button>
+  <button onclick="submitLyric(43)">the</button>
+  <button onclick="submitLyric(44)">things</button>
+  <button onclick="submitLyric(45)">that</button>
+  <button onclick="submitLyric(46)">make</button>
+  <button onclick="submitLyric(47)">us</button>
+  <button onclick="submitLyric(48)">laugh</button>
+  <button onclick="submitLyric(49)">and</button>
+  <button onclick="submitLyric(50)">cry</button>
+  <button onclick="submitLyric(51)">he's</button>
+  <button onclick="submitLyric(52)">the</button>
+  <button onclick="submitLyric(53)">family</button>
+  <button onclick="submitLyric(54)">guy</button>
+  </p>
+
+<p> 
+<button type="button" onclick="randTime()">
+  Random</button>
+<button type="button" onclick="randTime10()">
+  Random 10</button>
+  </p>
+
+<p>
+Start Time: <input type="number" id="startTime" value="enter time">
+Duration: <input type="number" id="duration" value="enter time">
+</p>
+
+<p>
+<button type="button" onclick="submitTime()">Submit</button>
+<button onclick="playVid()">Play</button>
+<button onclick="pauseVid()">Pause</button>
+<button onclick="reset()">Reset</button>
+</p>
+
+<p>Playback position: <span id="cTime"></span></p>
+  
+<table id="myTable"> 
+   <tr>
+     <th> <button type="button" onclick="slide(st, 0.05)"> 
+       - </button>Start Time<button type="button" onclick="slide(st, 0.05)"> + </button>
+     </th>
+     <th> <button type="button" onclick="scale(dur, 0.9)">
+       - </button> Duration <button type="button" onclick="scale(dur, 1.1)"> + </button> </th>
+  </tr>
+</table>
+  
+<button onclick="playVid()">Play</button>
+<button onclick="pauseVid()">Pause</button>
+ 
+<p>Playback position: <span id="cTime"></span></p>
+
+</center>
+</body>
+
+<script src="script.js"></script>
+
+</html>
+
