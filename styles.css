@@ -1,0 +1,16 @@
+.container { 
+  position:relative; 
+}
+
+.image1 { position:absolute; 
+  top: 0px; 
+  left: 0px; 
+  z-index: 1; 
+  width: 512px;
+} 
+
+.image2 { position:absolute; 
+  top: 240px; 
+  left: 200px; 
+  z-index: 3;
+}
